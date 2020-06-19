@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: #111111;
+}
+
+.content{
+  margin-left: 230px;
+  margin-right: 230px;
+}
+
+#nav{
+  display: flex;
+  margin-top: 36.1px;
+  margin-bottom: 30px;
+}
+
+#nav .logo img{
+  width: 90.6px;
+  height: 26.9px;
+  margin-right: 128px;
+}
+
+#nav .menu{
+  align-self: center;
+}
+
+#nav .menu a{
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #111111;
+  margin-right: 30px; 
+}
+
+#nav .menu a:hover{
+  opacity: 0.8;
+}
+
+.principal-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 940px;
+  height: 366px;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.principal-image .text-image h1{
+  width: 305px;
+  margin-left: 60px;
+  margin-top: 117px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+.principal-image .text-image p{
+  width: 316px;
+  height: 84px;
+
+  margin-left: 60px;
+  margin-top: 10px;
+
+  color: #000;
+  opacity: 0.7;
+
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+
+.principal-image .logo-image img{
+  padding-top: 66px;
+  margin-left: 154px;
+}
+
+
+.mais-acessadas h2{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.mais-acessadas .pedidos-acessados{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.mais-acessadas .pedidos-acessados .pedido{
+  width: 300px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.mais-acessadas .pedidos-acessados .pedido img{
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+
+.mais-acessadas .pedidos-acessados .pedido .title{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.mais-acessadas .pedidos-acessados .pedido .subtitle{
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+  padding-bottom: 10px;
+}
+
+footer{
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+/* ========================
+          Sobre
+  =========================
+*/
+
+#sobre h2{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#sobre p{
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+
+/*
+=============================
+            MODALS
+=============================
+*/
+
+.modal-overlay{
+  background-color: rgba(0, 0, 0, 0.815);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal{
+  background-color: #fff;
+  opacity: 1.0;
+  border-radius: 16px;
+
+  width: 660px;
+  height: 413px;
+
+  position: relative;
+  margin: 0 auto;
+  top: 128px;
+}
+
+.close-modal{
+  color: #111111;
+  position: absolute;
+  bottom: 8px;
+  left: 330px;
+
+  cursor: pointer;
+}
+
+.close-modal:hover{
+  background-color: #ccc;
+  border-radius: 100%;
+}
+
+.modal-overlay.active{
+  opacity: 1.0;
+  visibility: visible;
+
+  transition:  800ms;
+}
+
+.modal-content img{
+  width: 600px;
+  height: 200px;
+
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.modal-content h1{
+  font-size: 24px;
+  color: #111111;
+  text-align: center;
+  font-weight: normal;
+}
+
+.modal-content p{
+  font-size: 18px;
+  color: #777777;
+  text-align: center;
+}

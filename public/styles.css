@@ -73,12 +73,10 @@ body{
   font-weight: normal;
 }
 
-
 .principal-image .logo-image img{
   padding-top: 66px;
   margin-left: 154px;
 }
-
 
 .mais-acessadas h2{
   font-size: 24px;
@@ -98,13 +96,11 @@ body{
   margin-bottom: 20px;
 }
 
-
 .mais-acessadas .pedidos-acessados .pedido img{
   width: 300px;
   height: 140px;
   border-radius: 15px;
 }
-
 
 .mais-acessadas .pedidos-acessados .pedido .title{
   font-size: 18px;
@@ -152,78 +148,48 @@ footer p{
   line-height: 28px;
 }
 
-
-/*
-=============================
-            MODALS
-=============================
+/* ========================
+      Recipe Description
+  =========================
 */
-
-.modal-overlay{
-  background-color: rgba(0, 0, 0, 0.815);
-
-  width: 100%;
-  height: 100%;
-
-  position: fixed;
-  top: 0;
-
-  opacity: 0;
-  visibility: hidden;
+.recipe-check{
+  margin-bottom: 50px;
 }
 
-.modal{
-  background-color: #fff;
-  opacity: 1.0;
-  border-radius: 16px;
-
-  width: 660px;
-  height: 413px;
-
-  position: relative;
-  margin: 0 auto;
-  top: 128px;
+.recipe-check img{
+  width: 70vw;
+  height: 280px;
 }
 
-.close-modal{
-  color: #111111;
-  position: absolute;
-  bottom: 8px;
-  left: 330px;
+.recipe-check .title{
+  max-width: 70vw;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
 
+.recipe-check .subtitle{
+  max-width: 70vw;
+  font-size: 20px;
+  line-height: 24px;
+  color: #777;
+  text-align: center;
+}
+
+#ingridients ul li,
+#preparation ul li,
+#information p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+}
+
+.buttons {
   cursor: pointer;
 }
 
-.close-modal:hover{
+.buttons:hover{
   background-color: #ccc;
-  border-radius: 100%;
-}
-
-.modal-overlay.active{
-  opacity: 1.0;
-  visibility: visible;
-
-  transition:  800ms;
-}
-
-.modal-content img{
-  width: 600px;
-  height: 200px;
-
-  margin-left: 30px;
-  margin-top: 30px;
-  border-radius: 15px;
-}
-
-.modal-content h1{
-  font-size: 24px;
-  color: #111111;
-  text-align: center;
-  font-weight: normal;
-}
-
-.modal-content p{
-  font-size: 18px;
-  color: #777777;
-  text-align: center;
+  padding: 1px;
+  border-radius: 5px;
 }

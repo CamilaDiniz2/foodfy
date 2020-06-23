@@ -1,0 +1,77 @@
+{% extends "layout.njk" %}
+
+  {% block head %}
+      <title> .: Receitas - Foodfy </title>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  {% endblock %}
+
+  {% block logo %}
+    <a href="/">
+      <img src="../images/logo.png" alt="">
+    </a>
+  {% endblock %}
+
+{% block content %}
+  <div class="recipe-check">
+    <img src="{{item.image}}" alt="Foto de {{item.title}}">
+    <p class="title">{{item.title}}</p>
+    <p class="subtitle">{{item.author}}</p>
+  </div>
+
+  <div class="ingredientes">
+    <h2>Ingredients: </h2>
+
+    <a  onclick="hidenOrShowRecipe()" class="buttons">
+     <i class="material-icons">
+       more_horiz
+     </i>
+    </a>
+
+    <div id="ingridients">
+      <ul>  
+      {% for ingredient in item.ingredients %}
+        <li>{{ingredient}}</li> 
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+
+
+   <div class="directions">
+    <h2>Directions: </h2>
+
+    <a  onclick="hidenOrShowDirections()" class="buttons">
+     <i class="material-icons">
+       more_horiz
+     </i>
+    </a>
+
+    <div id="preparation">
+      <ul>  
+      {% for preparation in item.preparation %}
+        <li>{{preparation}}</li> 
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="moreInformation">
+    <h2>More Information: </h2>
+
+    <a  onclick="hidenOrShowInformation()" class="buttons">
+     <i class="material-icons">
+       more_horiz
+     </i>
+    </a>
+    <div id="information">  
+        <p>{{item.information}}</p> 
+    </div>
+  </div>
+
+
+<script src="../main.js"></script>
+
+{% endblock %}

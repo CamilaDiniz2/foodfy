@@ -5,7 +5,8 @@
 ---
 ## Índice
 - [Sobre](#-sobre)
-- [Telas](#-telas)
+- [Front-end](#-front-end)
+- [Refatorando](#-refatorando)
 - [Tecnologias](#-tecnologias)
 - [Produção](#-produção)
 
@@ -14,31 +15,44 @@
 Desafio proposto no LaunchBase da [Rocketseat](https://rocketseat.com.br/). A ideia consistia em desenvolver o front-end de um site para uma empresa de receitas com nome de Foodfy.
 
 ---
-### Telas
+### Front-end
 
 🍕 A tela inicial continha a logo da empresa, menu com links para duas outras páginas: Sobre e Receitas.
 
-<img src="images/tela-inicial.png" >
+<img src="public/images/tela-inicial.png" >
 
 🍟 A segunda tela era sobre a empresa.
 
-<img src="images/sobre.png" >
+<img src="public/images/sobre.png" >
 
 🥓 A terceira e última tela consistia nas Receitas
 
-<img src="images/receitas.png" >
+<img src="public/images/receitas.png" >
 
 e ao clicar em uma das receitas aparecia um modal com a receita em foco.
 
-<img src="images/modal.png" >
+<img src="public/images/modal.png" >
 
 ---
+### Refatorando
+Em seguida o código foi refatorado e utilizado nunjucks. A tela do modal foi subsituída por uma nova tela contendo mais informações sobre a receita. As informações sobre as receitas foram todas passadas para o back-end da aplicação.
+
+<img src="public/images/recipe-description.png" >
+
+As informações sobre os Ingredientes, Preparo e Mais informações podem ser expandidos ou não.
+
+
+<img src="public/images/recipes-info.png" >
+
 ### Tecnologias
 
 Foram utilizadas as seguintes ferramentas:
 - HTML
 - CSS
 - Javascript
+- Nunjucks
+- Express
+
 
 ---
 ### Produção
